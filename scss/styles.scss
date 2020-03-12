@@ -1,5 +1,148 @@
+$color-primary-cyan: hsl(171, 66%, 44%);
+$color-primary-blue: hsl(233, 100%, 69%);
+$color-neutral-gray: hsl(201, 11%, 66%);
+$color-neutral-dark-gray: hsl(210, 10%, 33%);
+$font-size: 1.125em;
+$font-family: "Bai Jamjuree", Arial, sans-serif;
+
+body {
+    font-family: $font-family;
+
+    margin: 0;
+}
+
+p,
+li {
+    font-size: 1.125em;
+    line-height: 30px;
+    color: $color-neutral-gray;
+}
+
+h1,
+h2,
+h3 {
+    color: $color-neutral-dark-gray;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.button {
+    font-family: $font-family;
+    font-weight: bold;
+    width: 170px;
+    height: 45px;
+    color: #fff;
+    border: 0;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-radius: 20px;
+    &--cyan {
+        margin-right: 10px;
+        border-bottom-color: hsl(171, 66%, 40%);
+        background-color: $color-primary-cyan;
+        box-shadow: 0 15px 15px -15px $color-primary-cyan;
+    }
+
+    &--blue {
+        border-bottom-color: hsl(233, 100%, 65%);
+        background-color: $color-primary-blue;
+        box-shadow: 0 15px 15px -15px $color-primary-blue;
+    }
+}
+
+.section {
+    &--primary {
+        p {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.section-header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__body {
+        margin-bottom: 40px;
+    }
+}
+
+.section-intro {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.section-track {
+    display: flex;
+    justify-content: center;
+}
+
+.section-track-wrapper {
+    display: grid;
+    margin: 0 auto;
+    column-gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    .section-header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .large-image {
+        position: relative;
+        right: 80px;
+
+        grid-column: 1;
+        grid-row: 2 / -1;
+    }
+
+    .track-feature {
+        grid-column: 2;
+    }
+
+    .track-feature:nth-child(1) {
+        grid-row: 2;
+    }
+
+    .track-feature:nth-child(2) {
+        grid-row: 3;
+    }
+
+    .track-feature:nth-child(3) {
+        grid-row: 4;
+    }
+}
+
+.track-feature {
+    max-width: 380px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
 .attribution {
-    font-size: 11px;
     text-align: center;
     a {
         color: hsl(228, 45%, 44%);
