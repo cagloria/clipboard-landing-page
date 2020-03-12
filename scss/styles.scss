@@ -17,6 +17,10 @@ li {
     color: $color-neutral-gray;
 }
 
+.large-text {
+    font-size: 1.3em;
+}
+
 h1,
 h2,
 h3 {
@@ -68,17 +72,12 @@ h3 {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
-    &--primary {
-        p {
-            font-size: 1.2em;
-        }
-    }
 }
 
 .section-header {
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
     &__title {
         margin-bottom: 15px;
@@ -105,7 +104,6 @@ h3 {
     .image-container {
         position: relative;
         overflow: hidden;
-
         width: 50%;
         height: 575px;
         white-space: nowrap;
@@ -119,7 +117,6 @@ h3 {
 .features-container {
     display: flex;
     flex-direction: column;
-
     width: 50%;
 }
 
@@ -155,6 +152,42 @@ h3 {
     .large-image {
         width: 100%;
         height: auto;
+    }
+}
+
+.section-workflow {
+    text-align: center;
+
+    .section-header {
+        margin-bottom: 80px;
+    }
+}
+
+.workflow-features-container {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.workflow-feature {
+    display: grid;
+    max-width: 400px;
+    margin-left: 40px;
+    text-align: center;
+    grid-template-rows: 65px 70px auto;
+    &:last-of-type {
+        margin-right: 40px;
+    }
+
+    img {
+        width: auto;
+        height: 35px;
+        margin: 0 auto;
+    }
+
+    h3,
+    p {
+        margin: 0;
     }
 }
 
