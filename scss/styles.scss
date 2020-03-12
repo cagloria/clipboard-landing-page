@@ -156,8 +156,8 @@ h3 {
 }
 
 .section-workflow {
+    margin-top: 0;
     text-align: center;
-
     .section-header {
         margin-bottom: 80px;
     }
@@ -188,6 +188,16 @@ h3 {
     h3,
     p {
         margin: 0;
+    }
+}
+
+.section-partners {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        margin: 0 60px 60px;
     }
 }
 

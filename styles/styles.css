@@ -173,6 +173,7 @@ h3 {
 }
 
 .section-workflow {
+    margin-top: 0;
     text-align: center;
 }
 
@@ -213,6 +214,24 @@ h3 {
 .workflow-feature h3,
 .workflow-feature p {
     margin: 0;
+}
+
+.section-partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.section-partners img {
+    margin: 0 60px 60px;
 }
 
 .attribution {
