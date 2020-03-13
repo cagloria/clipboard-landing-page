@@ -21,7 +21,7 @@ li {
 }
 
 .large-text {
-    font-size: 1.3em;
+    font-size: 1.27em;
 }
 
 h1,
@@ -31,32 +31,32 @@ h3 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.1em;
 }
 
 h3 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 .button {
     font-family: $font-family;
-    font-weight: bold;
-    width: 170px;
-    height: 45px;
+    font-size: 1.125em;
+    width: 230px;
+    height: 55px;
     color: #fff;
     border: 0;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-radius: 20px;
+    border-radius: 25px;
     &--cyan {
         margin-right: 10px;
         border-bottom-color: hsl(171, 66%, 40%);
@@ -129,7 +129,7 @@ h3 {
 
 .cloud-feature {
     max-width: 380px;
-    margin-left: 40px;
+    margin-left: 110px;
     grid-column: 2;
     &:nth-of-type(1) {
         margin-top: 30px;
@@ -175,17 +175,18 @@ h3 {
 
 .workflow-features-container {
     display: flex;
+    justify-content: space-between;
     width: fit-content;
     margin: 0 auto;
 }
 
 .workflow-feature {
     display: grid;
-    max-width: 400px;
-    margin-left: 30px;
+    max-width: 350px;
     text-align: center;
-    grid-template-rows: 65px 70px auto;
-    &:last-of-type {
+    grid-auto-columns: auto;
+    grid-template-rows: 65px 60px auto;
+    &:not(:last-of-type) {
         margin-right: 30px;
     }
 
@@ -199,6 +200,10 @@ h3 {
     p {
         margin: 0;
     }
+
+    p {
+        font-size: 1em;
+    }
 }
 
 // Partners
@@ -208,7 +213,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     img {
-        margin: 0 60px 60px;
+        margin: 0 50px 60px;
     }
 }
 

@@ -14,7 +14,7 @@ li {
 }
 
 .large-text {
-  font-size: 1.3em;
+  font-size: 1.27em;
 }
 
 h1,
@@ -24,32 +24,32 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
 }
 
 .button {
   font-family: "Bai Jamjuree", Arial, sans-serif;
-  font-weight: bold;
-  width: 170px;
-  height: 45px;
+  font-size: 1.125em;
+  width: 230px;
+  height: 55px;
   color: #fff;
   border: 0;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .button--cyan {
@@ -137,7 +137,7 @@ h3 {
 
 .cloud-feature {
   max-width: 380px;
-  margin-left: 40px;
+  margin-left: 110px;
   -ms-grid-column: 2;
   grid-column: 2;
 }
@@ -187,6 +187,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -196,14 +199,14 @@ h3 {
 .workflow-feature {
   display: -ms-grid;
   display: grid;
-  max-width: 400px;
-  margin-left: 30px;
+  max-width: 350px;
   text-align: center;
-  -ms-grid-rows: 65px 70px auto;
-      grid-template-rows: 65px 70px auto;
+  grid-auto-columns: auto;
+  -ms-grid-rows: 65px 60px auto;
+      grid-template-rows: 65px 60px auto;
 }
 
-.workflow-feature:last-of-type {
+.workflow-feature:not(:last-of-type) {
   margin-right: 30px;
 }
 
@@ -216,6 +219,10 @@ h3 {
 .workflow-feature h3,
 .workflow-feature p {
   margin: 0;
+}
+
+.workflow-feature p {
+  font-size: 1em;
 }
 
 .section-partners {
@@ -233,7 +240,7 @@ h3 {
 }
 
 .section-partners img {
-  margin: 0 60px 60px;
+  margin: 0 50px 60px;
 }
 
 .section-final {
