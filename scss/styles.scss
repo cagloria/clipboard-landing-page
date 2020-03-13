@@ -8,6 +8,9 @@ $font-family: "Bai Jamjuree", Arial, sans-serif;
 body {
     font-family: $font-family;
     margin: 0;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 p,
@@ -69,7 +72,6 @@ h3 {
 
     &:hover {
         cursor: pointer;
-
         filter: brightness(120%) saturate(75%);
     }
 }
@@ -92,6 +94,7 @@ h3 {
 
 // Intro
 .section-intro {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -279,7 +282,6 @@ h3 {
     a {
         position: absolute;
         top: 0;
-
         filter: grayscale(100%) brightness(60%);
         &:hover {
             filter: none;
@@ -294,7 +296,6 @@ h3 {
     a {
         text-decoration: none;
         color: $color-neutral-dark-gray;
-
         &:hover {
             color: $color-primary-cyan;
         }
