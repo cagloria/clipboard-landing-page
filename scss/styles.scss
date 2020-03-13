@@ -11,6 +11,7 @@ body {
     background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
 }
 
 p,
@@ -35,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.1em;
+    font-size: 2.2em;
 }
 
 h3 {
@@ -76,12 +77,6 @@ h3 {
     }
 }
 
-.section {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
 .section-header {
     max-width: 700px;
     margin: 0 auto;
@@ -94,7 +89,8 @@ h3 {
 
 // Intro
 .section-intro {
-    margin-top: 150px;
+    margin-top: 140px;
+    margin-bottom: 110px;
     text-align: center;
 }
 
@@ -120,7 +116,6 @@ h3 {
     }
 }
 
-// Features
 .features-container {
     display: flex;
     flex-direction: column;
@@ -129,12 +124,8 @@ h3 {
 
 .cloud-feature {
     max-width: 380px;
+    margin-top: 25px;
     margin-left: 110px;
-    grid-column: 2;
-    &:nth-of-type(1) {
-        margin-top: 30px;
-    }
-
     h3 {
         margin-bottom: 10px;
     }
@@ -145,10 +136,11 @@ h3 {
 
 // Access
 .section-access {
+    margin-top: 130px;
+    margin-bottom: 70px;
     text-align: center;
-
     .section-header {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .image-container {
@@ -169,7 +161,7 @@ h3 {
     margin-bottom: 150px;
     text-align: center;
     .section-header {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
@@ -185,14 +177,14 @@ h3 {
     max-width: 350px;
     text-align: center;
     grid-auto-columns: auto;
-    grid-template-rows: 65px 60px auto;
+    grid-template-rows: 75px 60px auto;
     &:not(:last-of-type) {
         margin-right: 30px;
     }
 
     img {
         width: auto;
-        height: 35px;
+        height: calc(100% - 35px);
         margin: 0 auto;
     }
 
@@ -212,6 +204,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 80px;
     img {
         margin: 0 50px 60px;
     }
@@ -219,7 +212,7 @@ h3 {
 
 // Final
 .section-final {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     text-align: center;
 }
 
