@@ -73,6 +73,7 @@ h3 {
   max-width: 700px;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 0 50px;
   text-align: center;
 }
 
@@ -130,6 +131,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  padding-right: 50px;
 }
 
 .cloud-feature {
@@ -187,6 +189,7 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .workflow-feature {
@@ -195,8 +198,8 @@ h3 {
   max-width: 350px;
   text-align: center;
   grid-auto-columns: auto;
-  -ms-grid-rows: 75px 60px auto;
-      grid-template-rows: 75px 60px auto;
+  -ms-grid-rows: 70px minmax(45px, auto) auto;
+      grid-template-rows: 70px minmax(45px, auto) auto;
 }
 
 .workflow-feature:not(:last-of-type) {
@@ -231,6 +234,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px;
+  padding: 0 50px;
 }
 
 .partners-section img {
@@ -347,4 +351,42 @@ h3 {
 
 .attribution a:hover {
   color: #26baa4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cloud-feature {
+    margin-left: 50px;
+  }
+  .workflow-features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workflow-feature:first-of-type {
+    margin-top: 50px;
+  }
+  .workflow-feature:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+  .footer-content-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo-footer {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .footer-links {
+    margin-bottom: 50px;
+  }
+  .social-links {
+    margin-left: 0;
+  }
 }
