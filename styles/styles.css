@@ -64,6 +64,12 @@ h3 {
     box-shadow: 0 15px 15px -15px #6173ff;
 }
 
+.button:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(120%) saturate(75%);
+    filter: brightness(120%) saturate(75%);
+}
+
 .section {
     width: 100%;
     margin-top: 100px;
@@ -275,6 +281,11 @@ h3 {
 
 .footer-links a {
     text-decoration: none;
+    color: #4c545d;
+}
+
+.footer-links a:hover {
+    color: #26baa4;
 }
 
 .social-links {
@@ -298,8 +309,24 @@ h3 {
     height: 24px;
 }
 
+.social-links li {
+    position: relative;
+}
+
 .social-links li:not(:last-of-type) {
     margin-right: 25px;
+}
+
+.social-links a {
+    position: absolute;
+    top: 0;
+    -webkit-filter: grayscale(100%) brightness(60%);
+    filter: grayscale(100%) brightness(60%);
+}
+
+.social-links a:hover {
+    -webkit-filter: none;
+    filter: none;
 }
 
 .attribution {
@@ -310,5 +337,9 @@ h3 {
 
 .attribution a {
     text-decoration: none;
-    color: #3e52a3;
+    color: #4c545d;
+}
+
+.attribution a:hover {
+    color: #26baa4;
 }

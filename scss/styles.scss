@@ -66,6 +66,12 @@ h3 {
         background-color: $color-primary-blue;
         box-shadow: 0 15px 15px -15px $color-primary-blue;
     }
+
+    &:hover {
+        cursor: pointer;
+
+        filter: brightness(120%) saturate(75%);
+    }
 }
 
 .section {
@@ -206,7 +212,6 @@ h3 {
 // Final
 .section-final {
     margin-bottom: 150px;
-
     text-align: center;
 }
 
@@ -243,6 +248,10 @@ h3 {
     grid-auto-flow: column;
     a {
         text-decoration: none;
+        color: $color-neutral-dark-gray;
+        &:hover {
+            color: $color-primary-cyan;
+        }
     }
 }
 
@@ -258,11 +267,23 @@ h3 {
     a {
         width: 24px;
         height: 24px;
-        // TODO: Place link on top of icon
     }
 
-    li:not(:last-of-type) {
-        margin-right: 25px;
+    li {
+        position: relative;
+        &:not(:last-of-type) {
+            margin-right: 25px;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: 0;
+
+        filter: grayscale(100%) brightness(60%);
+        &:hover {
+            filter: none;
+        }
     }
 }
 
@@ -272,7 +293,10 @@ h3 {
     text-align: center;
     a {
         text-decoration: none;
+        color: $color-neutral-dark-gray;
 
-        color: hsl(228, 45%, 44%);
+        &:hover {
+            color: $color-primary-cyan;
+        }
     }
 }
