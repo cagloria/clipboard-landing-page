@@ -120,6 +120,8 @@ h3 {
 .cloud-content-container .image-container .large-image {
   position: absolute;
   right: 0;
+  width: auto;
+  height: 100%;
 }
 
 .cloud-features-container {
@@ -248,7 +250,7 @@ h3 {
 
 .footer {
   margin: 0;
-  padding: 50px 0 25px;
+  padding: 50px 50px 25px;
   background-color: #eff0f0;
 }
 
@@ -266,7 +268,6 @@ h3 {
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
 .logo-footer {
@@ -354,6 +355,9 @@ h3 {
 }
 
 @media only screen and (max-width: 1024px) {
+  .cloud-content-container .image-container {
+    height: 475px;
+  }
   .cloud-feature {
     margin-left: 50px;
   }
@@ -388,5 +392,128 @@ h3 {
   }
   .social-links {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+  .button {
+    margin-right: 0;
+  }
+  .button:last-of-type {
+    margin-top: 20px;
+  }
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cloud-content-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cloud-content-container .image-container {
+    position: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 75%;
+    max-width: initial;
+    height: initial;
+  }
+  .cloud-content-container .image-container .large-image {
+    position: initial;
+    width: 100%;
+    height: auto;
+  }
+  .cloud-features-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-right: 0;
+  }
+  .cloud-feature {
+    margin-left: 0;
+    text-align: center;
+  }
+  .footer-links {
+    -ms-grid-columns: 175px;
+        grid-template-columns: 175px;
+    grid-auto-rows: 40px;
+    grid-auto-flow: row;
+  }
+  .attribution {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  section,
+  footer {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .button {
+    width: 100%;
+  }
+  .section-header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .image-container {
+    width: 100% !important;
+  }
+  .intro-section {
+    margin-top: 110px;
+    margin-bottom: 125px;
+  }
+  .cloud-section {
+    margin-bottom: 160px;
+  }
+  .cloud-feature {
+    margin-top: 0;
+  }
+  .access-section {
+    margin-bottom: 90px;
+  }
+  .workflow-features-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .partners-section {
+    margin-bottom: 120px;
+  }
+  .footer-content-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-links {
+    text-align: center;
+    grid-auto-rows: 50px;
+  }
+  .social-links li:not(:last-of-type) {
+    margin-right: 45px;
+  }
+  .attribution {
+    text-align: center;
   }
 }
