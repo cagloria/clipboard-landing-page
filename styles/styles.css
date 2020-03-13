@@ -82,7 +82,7 @@ h3 {
 }
 
 .intro-section {
-  margin-top: 140px;
+  margin-top: 130px;
   margin-bottom: 110px;
   text-align: center;
 }
@@ -151,12 +151,12 @@ h3 {
 }
 
 .access-section {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
 .access-section .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .access-section .image-container {
@@ -177,7 +177,7 @@ h3 {
 }
 
 .workflow-section .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .workflow-features-container {
@@ -200,8 +200,8 @@ h3 {
   max-width: 350px;
   text-align: center;
   grid-auto-columns: auto;
-  -ms-grid-rows: 70px minmax(45px, auto) auto;
-      grid-template-rows: 70px minmax(45px, auto) auto;
+  -ms-grid-rows: 80px 40px auto;
+      grid-template-rows: 80px 40px auto;
 }
 
 .workflow-feature:not(:last-of-type) {
@@ -210,7 +210,7 @@ h3 {
 
 .workflow-feature img {
   width: auto;
-  height: calc(100% - 35px);
+  height: 40px;
   margin: 0 auto;
 }
 
@@ -235,7 +235,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   padding: 0 50px;
 }
 
@@ -244,7 +244,7 @@ h3 {
 }
 
 .final-section {
-  margin-bottom: 120px;
+  margin-bottom: 140px;
   text-align: center;
 }
 
@@ -466,6 +466,18 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 70px;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .large-text,
+  p,
+  li {
+    font-size: 1em;
+  }
   section,
   footer {
     padding-right: 30px;
@@ -494,9 +506,15 @@ h3 {
   .access-section {
     margin-bottom: 90px;
   }
+  .workflow-section {
+    margin-bottom: 40px;
+  }
   .workflow-features-container {
     padding-right: 0;
     padding-left: 0;
+  }
+  .workflow-feature img {
+    height: 34px;
   }
   .partners-section {
     margin-bottom: 120px;
