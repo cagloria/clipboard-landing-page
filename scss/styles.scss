@@ -84,15 +84,12 @@ h3 {
     }
 }
 
+// Intro
 .section-intro {
     text-align: center;
 }
 
-.section-cloud-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
+// Cloud
 .section-cloud {
     display: flex;
     flex-direction: column;
@@ -114,6 +111,7 @@ h3 {
     }
 }
 
+// Features
 .features-container {
     display: flex;
     flex-direction: column;
@@ -136,6 +134,7 @@ h3 {
     }
 }
 
+// Access
 .section-access {
     text-align: center;
 
@@ -155,11 +154,13 @@ h3 {
     }
 }
 
+// Workflow
 .section-workflow {
     margin-top: 0;
+    margin-bottom: 150px;
     text-align: center;
     .section-header {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 }
 
@@ -172,11 +173,11 @@ h3 {
 .workflow-feature {
     display: grid;
     max-width: 400px;
-    margin-left: 40px;
+    margin-left: 30px;
     text-align: center;
     grid-template-rows: 65px 70px auto;
     &:last-of-type {
-        margin-right: 40px;
+        margin-right: 30px;
     }
 
     img {
@@ -191,6 +192,7 @@ h3 {
     }
 }
 
+// Partners
 .section-partners {
     display: flex;
     align-items: center;
@@ -201,9 +203,76 @@ h3 {
     }
 }
 
+// Final
+.section-final {
+    margin-bottom: 150px;
+
+    text-align: center;
+}
+
+// Footer
+.section-footer {
+    margin: 0;
+    padding: 50px 0 25px;
+    background-color: hsl(180, 3%, 94%);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo-footer {
+    width: 60px;
+    height: 60px;
+    margin-right: 150px;
+}
+
+.footer-links {
+    display: grid;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    grid-template-columns: 175px 175px 175px;
+    grid-template-rows: 40px 40px;
+    grid-auto-flow: column;
+    a {
+        text-decoration: none;
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+    padding-left: 0;
+    list-style-type: none;
+    li,
+    a {
+        width: 24px;
+        height: 24px;
+        // TODO: Place link on top of icon
+    }
+
+    li:not(:last-of-type) {
+        margin-right: 25px;
+    }
+}
+
 .attribution {
+    margin-top: 30px;
+    margin-bottom: 0;
     text-align: center;
     a {
+        text-decoration: none;
+
         color: hsl(228, 45%, 44%);
     }
 }
