@@ -36,11 +36,6 @@ h3 {
   font-size: 1.5em;
 }
 
-.logo {
-  width: 125px;
-  height: 125px;
-}
-
 .button {
   font-family: "Bai Jamjuree", Arial, sans-serif;
   font-size: 1.125em;
@@ -85,13 +80,18 @@ h3 {
   margin-bottom: 15px;
 }
 
-.section-intro {
+.intro-section {
   margin-top: 140px;
   margin-bottom: 110px;
   text-align: center;
 }
 
-.section-cloud {
+.logo {
+  width: 125px;
+  height: 125px;
+}
+
+.cloud-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,15 +99,16 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 130px;
 }
 
-.cloud-content {
+.cloud-content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cloud-content .image-container {
+.cloud-content-container .image-container {
   position: relative;
   overflow: hidden;
   width: 50%;
@@ -115,12 +116,12 @@ h3 {
   white-space: nowrap;
 }
 
-.cloud-content .image-container .large-image {
+.cloud-content-container .image-container .large-image {
   position: absolute;
   right: 0;
 }
 
-.features-container {
+.cloud-features-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,34 +146,33 @@ h3 {
   margin-top: 0;
 }
 
-.section-access {
-  margin-top: 130px;
+.access-section {
   margin-bottom: 70px;
   text-align: center;
 }
 
-.section-access .section-header {
+.access-section .section-header {
   margin-bottom: 60px;
 }
 
-.section-access .image-container {
+.access-section .image-container {
   width: 75%;
   max-width: 905px;
   margin: 0 auto;
 }
 
-.section-access .large-image {
+.access-section .large-image {
   width: 100%;
   height: auto;
 }
 
-.section-workflow {
+.workflow-section {
   margin-top: 0;
   margin-bottom: 150px;
   text-align: center;
 }
 
-.section-workflow .section-header {
+.workflow-section .section-header {
   margin-bottom: 50px;
 }
 
@@ -218,7 +218,7 @@ h3 {
   font-size: 1em;
 }
 
-.section-partners {
+.partners-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,22 +233,22 @@ h3 {
   margin-bottom: 80px;
 }
 
-.section-partners img {
+.partners-section img {
   margin: 0 50px 60px;
 }
 
-.section-final {
+.final-section {
   margin-bottom: 120px;
   text-align: center;
 }
 
-.section-footer {
+.footer {
   margin: 0;
   padding: 50px 0 25px;
   background-color: #eff0f0;
 }
 
-.footer-container {
+.footer-content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

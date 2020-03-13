@@ -43,11 +43,6 @@ h3 {
     font-size: 1.5em;
 }
 
-.logo {
-    width: 125px;
-    height: 125px;
-}
-
 .button {
     font-family: $font-family;
     font-size: 1.125em;
@@ -88,19 +83,25 @@ h3 {
 }
 
 // Intro
-.section-intro {
+.intro-section {
     margin-top: 140px;
     margin-bottom: 110px;
     text-align: center;
 }
 
-// Cloud
-.section-cloud {
-    display: flex;
-    flex-direction: column;
+.logo {
+    width: 125px;
+    height: 125px;
 }
 
-.cloud-content {
+// Cloud
+.cloud-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+
+.cloud-content-container {
     display: flex;
 
     .image-container {
@@ -116,7 +117,7 @@ h3 {
     }
 }
 
-.features-container {
+.cloud-features-container {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -135,8 +136,7 @@ h3 {
 }
 
 // Access
-.section-access {
-    margin-top: 130px;
+.access-section {
     margin-bottom: 70px;
     text-align: center;
     .section-header {
@@ -156,7 +156,7 @@ h3 {
 }
 
 // Workflow
-.section-workflow {
+.workflow-section {
     margin-top: 0;
     margin-bottom: 150px;
     text-align: center;
@@ -172,6 +172,7 @@ h3 {
     margin: 0 auto;
 }
 
+// FIXME: Resizing of workflow feature
 .workflow-feature {
     display: grid;
     max-width: 350px;
@@ -199,7 +200,7 @@ h3 {
 }
 
 // Partners
-.section-partners {
+.partners-section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -211,19 +212,19 @@ h3 {
 }
 
 // Final
-.section-final {
+.final-section {
     margin-bottom: 120px;
     text-align: center;
 }
 
 // Footer
-.section-footer {
+.footer {
     margin: 0;
     padding: 50px 0 25px;
     background-color: hsl(180, 3%, 94%);
 }
 
-.footer-container {
+.footer-content-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
