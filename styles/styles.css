@@ -7,38 +7,9 @@ body {
   background-size: contain;
 }
 
-p,
-li {
-  font-size: 1.125em;
-  line-height: 30px;
-  color: #9fabb2;
-}
-
-.large-text {
-  font-size: 1.27em;
-}
-
-h1,
-h2,
-h3 {
-  color: #4c545d;
-}
-
-h1 {
-  font-size: 2.8em;
-}
-
-h2 {
-  font-size: 2.2em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
 .button {
   font-family: "Bai Jamjuree", Arial, sans-serif;
-  font-size: 1.125em;
+  font-size: 18px;
   width: 230px;
   height: 55px;
   color: #fff;
@@ -69,6 +40,25 @@ h3 {
           filter: brightness(120%) saturate(75%);
 }
 
+.document-intro {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.document-intro__title {
+  font-size: 44px;
+  margin-bottom: 15px;
+  color: #4c545d;
+}
+
+.document-intro__body {
+  font-size: 20px;
+  color: #9fabb2;
+}
+
 .section-header {
   max-width: 700px;
   margin: 0 auto;
@@ -78,7 +68,27 @@ h3 {
 }
 
 .section-header__title {
+  font-size: 35px;
   margin-bottom: 15px;
+  color: #4c545d;
+}
+
+.section-header__body {
+  font-size: 18px;
+  line-height: 30px;
+  color: #9fabb2;
+}
+
+.feature__title {
+  font-size: 24px;
+  color: #4c545d;
+}
+
+.feature__body {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  color: #9fabb2;
 }
 
 .intro-section {
@@ -139,15 +149,12 @@ h3 {
 .cloud-feature {
   max-width: 380px;
   margin-top: 25px;
+  margin-bottom: 16px;
   margin-left: 110px;
 }
 
-.cloud-feature h3 {
+.cloud-feature__title {
   margin-bottom: 10px;
-}
-
-.cloud-feature p {
-  margin-top: 0;
 }
 
 .access-section {
@@ -214,13 +221,8 @@ h3 {
   margin: 0 auto;
 }
 
-.workflow-feature h3,
-.workflow-feature p {
+.workflow-feature__title {
   margin: 0;
-}
-
-.workflow-feature p {
-  font-size: 1em;
 }
 
 .partners-section {
@@ -277,6 +279,7 @@ h3 {
 }
 
 .footer-links {
+  font-size: 18px;
   display: -ms-grid;
   display: grid;
   margin: 0;
@@ -313,14 +316,10 @@ h3 {
   list-style-type: none;
 }
 
-.social-links li,
-.social-links a {
-  width: 24px;
-  height: 24px;
-}
-
 .social-links li {
   position: relative;
+  width: 24px;
+  height: 24px;
 }
 
 .social-links li:not(:last-of-type) {
@@ -328,8 +327,11 @@ h3 {
 }
 
 .social-links a {
+  line-height: 30px;
   position: absolute;
   top: 0;
+  width: 24px;
+  height: 24px;
   -webkit-filter: grayscale(100%) brightness(60%);
           filter: grayscale(100%) brightness(60%);
 }
@@ -340,9 +342,12 @@ h3 {
 }
 
 .attribution {
+  font-size: 18px;
+  line-height: 30px;
   margin-top: 30px;
   margin-bottom: 0;
   text-align: center;
+  color: #9fabb2;
 }
 
 .attribution a {
@@ -466,17 +471,21 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
-  h1 {
-    font-size: 2em;
-    margin-bottom: 70px;
+  .document-intro {
+    padding-right: 0;
+    padding-left: 0;
   }
-  h2 {
-    font-size: 1.8em;
+  .document-intro__title {
+    font-size: 32px;
   }
-  .large-text,
-  p,
-  li {
-    font-size: 1em;
+  .document-intro__body {
+    font-size: 18px;
+  }
+  .section-header__title {
+    font-size: 28px;
+  }
+  .feature__body {
+    font-size: 18px;
   }
   section,
   footer {

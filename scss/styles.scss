@@ -13,38 +13,9 @@ body {
     background-size: contain;
 }
 
-p,
-li {
-    font-size: 1.125em;
-    line-height: 30px;
-    color: $color-neutral-gray;
-}
-
-.large-text {
-    font-size: 1.27em;
-}
-
-h1,
-h2,
-h3 {
-    color: $color-neutral-dark-gray;
-}
-
-h1 {
-    font-size: 2.8em;
-}
-
-h2 {
-    font-size: 2.2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
 .button {
     font-family: $font-family;
-    font-size: 1.125em;
+    font-size: 18px;
     width: 230px;
     height: 55px;
     color: #fff;
@@ -71,6 +42,24 @@ h3 {
     }
 }
 
+.document-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    text-align: center;
+    &__title {
+        font-size: 44px;
+        margin-bottom: 15px;
+        color: $color-neutral-dark-gray;
+    }
+
+    &__body {
+        font-size: 20px;
+        color: $color-neutral-gray;
+    }
+}
+
 .section-header {
     max-width: 700px;
     margin: 0 auto;
@@ -78,7 +67,29 @@ h3 {
     padding: 0 50px;
     text-align: center;
     &__title {
+        font-size: 35px;
         margin-bottom: 15px;
+        color: $color-neutral-dark-gray;
+    }
+
+    &__body {
+        font-size: 18px;
+        line-height: 30px;
+        color: $color-neutral-gray;
+    }
+}
+
+.feature {
+    &__title {
+        font-size: 24px;
+        color: $color-neutral-dark-gray;
+    }
+
+    &__body {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0;
+        color: $color-neutral-gray;
     }
 }
 
@@ -129,12 +140,10 @@ h3 {
 .cloud-feature {
     max-width: 380px;
     margin-top: 25px;
+    margin-bottom: 16px;
     margin-left: 110px;
-    h3 {
+    &__title {
         margin-bottom: 10px;
-    }
-    p {
-        margin-top: 0;
     }
 }
 
@@ -192,13 +201,8 @@ h3 {
         margin: 0 auto;
     }
 
-    h3,
-    p {
+    &__title {
         margin: 0;
-    }
-
-    p {
-        font-size: 1em;
     }
 }
 
@@ -244,6 +248,7 @@ h3 {
 }
 
 .footer-links {
+    font-size: 18px;
     display: grid;
     margin: 0;
     padding-left: 0;
@@ -268,22 +273,21 @@ h3 {
     margin-left: auto;
     padding-left: 0;
     list-style-type: none;
-    li,
-    a {
-        width: 24px;
-        height: 24px;
-    }
-
     li {
         position: relative;
+        width: 24px;
+        height: 24px;
         &:not(:last-of-type) {
             margin-right: 25px;
         }
     }
 
     a {
+        line-height: 30px;
         position: absolute;
         top: 0;
+        width: 24px;
+        height: 24px;
         filter: grayscale(100%) brightness(60%);
         &:hover {
             filter: none;
@@ -292,9 +296,12 @@ h3 {
 }
 
 .attribution {
+    font-size: 18px;
+    line-height: 30px;
     margin-top: 30px;
     margin-bottom: 0;
     text-align: center;
+    color: $color-neutral-gray;
     a {
         text-decoration: none;
         color: $color-neutral-dark-gray;
@@ -414,19 +421,26 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
-    h1 {
-        font-size: 2em;
-        margin-bottom: 70px;
+    .document-intro {
+        padding-right: 0;
+        padding-left: 0;
+        &__title {
+            font-size: 32px;
+        }
+
+        &__body {
+            font-size: 18px;
+        }
     }
 
-    h2 {
-        font-size: 1.8em;
+    .section-header {
+        &__title {
+            font-size: 28px;
+        }
     }
 
-    .large-text,
-    p,
-    li {
-        font-size: 1em;
+    .feature__body {
+        font-size: 18px;
     }
 
     section,
